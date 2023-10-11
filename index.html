@@ -7,12 +7,15 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>1
   <style>
     html,
     body {
       width: 100%;
       height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("https://www.itchotels.com/content/dam/itchotels/in/umbrella/images/headmast-desktop/welcomhotel-bhubaneswar.jpg");
     }
 
     body {
@@ -28,8 +31,7 @@
     .container {
       width: 100%;
       height:500%;
-      background-repeat: no-repeat;
-      background-image: url("https://www.itchotels.com/content/dam/itchotels/in/umbrella/images/headmast-desktop/welcomhotel-bhubaneswar.jpg");
+      
     }
 
     .form {
@@ -37,11 +39,17 @@
       left: 12%;
       margin-top: 80px;
     }
+    
+    #navig
+    {
+        margin-top: -25px;
+        height:60px;
+    }
   </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg  bg-dark">
+  <nav class="navbar navbar-expand-lg  bg-dark" id="navig">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,9 +60,10 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
+          &emsp;&emsp;
           <li class="nav-item">
             <a class="nav-link" href="admin.html">Admin</a>
-          </li>
+          </li>&emsp;&emsp;
           <li class="nav-item">
             <a class="nav-link" href="suite.html">Booking</a>
           </li>
@@ -64,19 +73,19 @@
   </nav>
 
   <div class="container">
-    <h1> Welcome to Royal Hotel </h1>
+    <h1 style="color:white"> Welcome to Royal Hotel </h1>
     <form class="form form-control w-75" name="Reg" method="post" action="registration">
       <h1>Sign Up</h1><br />
       <div class="d-flex justify-content-between">
-        <label class="w-25 text-center">Name:</label>
+          <label class="w-25 text-center"><b>Name:</b></label>
         <input class="form-control w-75" type="text" name="name" placeholder="Enter your Name" required="" />
       </div><br/>
       <div class="d-flex justify-content-between">
-        <label class="w-25 text-center">Email ID:</label>
+          <label class="w-25 text-center"><b>Email ID:</b></label>
         <input class="form-control w-75" type="text" name="email_id" placeholder="Enter your Email" required="">
       </div><br/>
       <div class="d-flex justify-content-between">
-        <label class="w-25 text-center">Password:</label>
+          <label class="w-25 text-center"><b>Password:</b></label>
         <input class="form-control w-75" type="password" name="pass" placeholder="Enter your Passowrd" required=""/><br />
       </div><br/>
       <input class="btn btn-primary" type="Submit" value="Create an account" />
@@ -86,9 +95,6 @@
       <!--<a href="admin.html" target="_blank"/><button>Admin Login</button></a>--->
     </div>
   </div>
-
-
-
 
 </body>
 
