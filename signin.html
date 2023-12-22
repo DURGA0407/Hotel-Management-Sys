@@ -12,41 +12,42 @@
             body
             {
                 text-align: center;
+                background-image: linear-gradient(60deg,plum,palegoldenrod);
+                height: 703px;
             }
             table {
                 padding-top: 30px;
                 padding-left: 700px;
                 box-sizing: border-box;
+                
                 }
             .form{
                 position:absolute;
                 left:80%;
             }
             .container
-            {
-                background-color:orchid;
-                border:solid 6px black;
-                height: 800px;
-                padding-top:250px;
+            {  
+                padding-top:180px;
                 padding-left: 300px;
             }
         </style>
     </head>
     <body>
+        <h2 style="font-family: cursive;color: darkblue;;font-size:32px">LOGIN</h2>
         <div class="container">
             
-            <form class="form-control w-75" name="Reg" method="post" action="signinvalidate">
-                <h1> Login </h1><br/>
-                <div class="d-flex justify-content-between">
-                <label class="w-25 text-center">Email ID:</label>
+            <form class="form-control w-75" name="Reg" method="post" action="signinvalidate" style="width: 100%;border-radius: 35px;height: 50%;box-shadow: 3px 3px 5px gray;">
+                
+                <div class="d-flex justify-content-between" style="margin-top:5rem">
+                    <label class="w-25 text-center"><b>Email ID:</b></label>
                 <input class="form-control w-75" type="text" name="email_id" placeholder="Enter your Email">
                 </div><br/>
                 <div class="d-flex justify-content-between">
-                <label class="w-25 text-center">Password:</label>
+                    <label class="w-25 text-center"><b>Password:</b></label>
                 <input class="form-control w-75" type="password" name="password" placeholder="Enter your Passowrd" /><br />
                 </div><br/>
-                <a href="http://localhost:8080/Hotel_Management_System2/book.html" target="_blank"/><button class="btn btn-info">Sign in</button></a><br/><br/>
-                <!--<input class="btn btn-info" type="Submit" value="Sign in"/> --->  
+                <a href="http://localhost:8080/Hotel_Management_System2/book.html" target="_blank"/><button class="btn btn-info" style="margin-top: 2.8rem;padding: 12px;font-size: 18px">Sign in</button></a><br/><br/>
+                
             </form>
         </div>
     </body>
