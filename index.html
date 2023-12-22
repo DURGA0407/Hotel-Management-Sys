@@ -15,7 +15,7 @@
       height: 100%;
       background-repeat: no-repeat;
       background-size: cover;
-      background-image: url("https://www.itchotels.com/content/dam/itchotels/in/umbrella/images/headmast-desktop/welcomhotel-bhubaneswar.jpg");
+      background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url("https://www.itchotels.com/content/dam/itchotels/in/umbrella/images/headmast-desktop/welcomhotel-bhubaneswar.jpg");
     }
 
     body {
@@ -30,8 +30,7 @@
 
     .container {
       width: 100%;
-      height:500%;
-      
+      height:500px;
     }
 
     .form {
@@ -45,6 +44,13 @@
         margin-top: -25px;
         height:60px;
     }
+    
+    img{
+        margin-top: 0.3rem;
+        width:5%;
+        height: 59px;
+        border-radius: 50%;
+    }
   </style>
 </head>
 
@@ -56,9 +62,10 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
+          <img src="https://previews.123rf.com/images/mehibi/mehibi1508/mehibi150801300/44126338-hotel-logo-template.jpg" alt="logo"/>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">&emsp;&emsp;Home</a>
           </li>
           &emsp;&emsp;
           <li class="nav-item">
@@ -73,8 +80,8 @@
   </nav>
 
   <div class="container">
-    <h1 style="color:white"> Welcome to Royal Hotel </h1>
-    <form class="form form-control w-75" name="Reg" method="post" action="registration">
+    <h1 style="color:white;font-weight: bolder"> Welcome to Royal Hotel </h1>
+    <form class="form form-control w-75" name="Reg" method="post" action="registration" style="border-radius:20px">
       <h1>Sign Up</h1><br />
       <div class="d-flex justify-content-between">
           <label class="w-25 text-center"><b>Name:</b></label>
@@ -92,9 +99,12 @@
     </form>
     <div class="text-white">Have an account?
       <a href="signin.html" target="_blank"><button class="btn btn-success">Sign in</button></a>
-      <!--<a href="admin.html" target="_blank"/><button>Admin Login</button></a>--->
+      
     </div>
   </div>
+
+
+
 
 </body>
 
