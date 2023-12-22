@@ -27,23 +27,85 @@
                 margin:200px 200px 100px 550px; 
             }
 
+            
+            .form{
+                background-color: burlywood;
+                height: 600px;
+                width:43%;
+                margin:3.5rem 10rem 1rem 28rem;
+                border-radius: 20px;
+            }
+            img{
+                margin-top: 2rem;
+                margin-bottom: 3rem;
+                height: 16rem;
+                border-radius: 50%;
+            }
+            input{
+             width:65%;margin-right:17rem;height:3em;border-color:transparent;
+             margin-left: 6.5em;
+             margin-top: 3px;
+            }
+            .w-25{
+                font-size:18px;
+            }
+            .btn-dark{
+                font-size: 18px;
+                padding: 11px;
+         
+            }
+            
+
         </style>
         
     </head>
-    <body class="back">
-        <div class="round">
-            <h1>Login </h1><br/>
+  
+    
+    
+    <body>
+        <div class="form">
+            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="avatar"/>
             <form name="Admin" method="post" action="Admin">
                 <div class="d-flex justify-content-between">
-        <label class="w-25 text-center">Email ID:</label>
-        <input class="form-control w-75" type="text" name="email_id" placeholder="Enter your Email" >
-      </div><br/>
-      <div class="d-flex justify-content-between">
-        <label class="w-25 text-center">Password:</label>
-        <input class="form-control w-75" type="password" name="pass" placeholder="Enter your Passowrd"/><br />
-      </div><br/>
-      <a href="/Admin" target="_blank"/><button class="btn btn-dark">Sign in</button></a><br/><br/>
+                    <label class="w-25 text-center"><b>Email ID:</b></label>
+                </div>
+                <div>
+                    <input  type="text" name="email_id" placeholder="Enter your Email" required="" id="ip1" onclick="glow()" />
+                </div><br/>
+                <div class="d-flex justify-content-between">
+                    <label class="w-25 text-center"><b>Password:</b></label>
+                </div>
+                <div>
+                    <input  type="password" name="pass" placeholder="Enter your Passowrd" required="" id="ip2" onclick="glow()"/><br />
+                </div><br/>
+                <a href="/Admin" target="_blank" onclick="validate()"/><button class="btn btn-dark" >Sign in</button></a><br/><br/>
             </form>     
         </div>
+        
+        
+        
+        
+        <script>
+            function glow() {
+                const input1 = document.getElementById("ip1");
+                const input2 = document.getElementById("ip2");
+                input1.style.outline = "4px solid rgba(0,239,255,0.5)";
+                input2.style.outline = "4px solid rgba(0,239,255,0.5)";
+            }
+            
+            function validate(){
+                var email = document.Admin.email_id.value;
+                var pass = document.Admin.pass.value;
+                
+                if(email == "" || pass == "")
+                {
+                    alert("Please fill out the fields....");
+                    return false;
+                }
+               
+                
+            }
+        </script>
     </body>
+        
 </html>
